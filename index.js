@@ -9,12 +9,13 @@ const questions = [
     },
     {
         message: 'Choose a color for your logo.',
-        name: 'text color',
+        name: 'textColor',
     },
     {
         type: 'list',
         message: 'Select a shape for your logo.',
-        choices: [ 'Circle', 'Triangle', 'Square']
+        name: 'shape',
+        choices: [ 'circle', 'triangle', 'square']
     },
     {
         message: 'Enter a shape color for your logo.',
@@ -22,8 +23,8 @@ const questions = [
     },
 ];
 
-function writeToFile(filename, data) {
-    fs.writeFile(filename, data, (err) => err ? console.error(err) : console.log(`Wrote data to ${fileName}`));
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) => err ? console.error(err) : console.log(`Wrote data to ${fileName}`));
 }
 
 function init() {
