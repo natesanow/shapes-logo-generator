@@ -12,7 +12,7 @@ const questions = [
         name: 'text color',
     },
     {
-        type: 'checkbox',
+        type: 'list',
         message: 'Select a shape for your logo.',
         choices: [ 'Circle', 'Triangle', 'Square']
     },
