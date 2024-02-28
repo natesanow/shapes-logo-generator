@@ -1,14 +1,15 @@
+// Packages required to run application
 const inquirer = require('inquirer');
 const fs = require('fs')
 const generateLogo = require('./lib/shapes').generateLogo;
-
+// Array of questions for user input
 const questions = [
     {
         message: 'Enter up to 3 characters for your logo.',
         name: 'text',
     },
     {
-        message: 'Choose a color for your logo.',
+        message: 'Enter a text color for your logo.',
         name: 'textColor',
     },
     {
@@ -22,11 +23,11 @@ const questions = [
         name: 'shapeColor',
     },
 ];
-
+// Function to write file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) => err ? console.error(err) : console.log(`Wrote data to ${fileName}`));
 }
-
+// Function to initialize app
 function init() {
     inquirer
     .prompt(questions)
