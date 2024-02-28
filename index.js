@@ -4,7 +4,7 @@ const generateLogo = require('./lib/shapes').generateLogo;
 
 const questions = [
     {
-        message: 'Enter 3 characters for your logo.',
+        message: 'Enter up to 3 characters for your logo.',
         name: 'text',
     },
     {
