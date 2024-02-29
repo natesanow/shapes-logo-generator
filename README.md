@@ -14,6 +14,8 @@ In this project I built a Node.js command-line application that takes in user in
 
 ## Screencast Tutorial Video with link
 
+https://github.com/natesanow/shapes-logo-generator/assets/152323081/c66f6b25-df71-4e12-b2ca-61436903d683
+
 https://drive.google.com/file/d/1A5tqxnqH0A723EW5iM8BBAAyDIYaEDZ9/view
 
 ## Github Link
